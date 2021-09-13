@@ -50,23 +50,35 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Primer desafío</h1>
-							<span class="image main"><img src="images/01.jpg" alt="" /></span>
+							<h1>Segundo desafío</h1>
+							<span class="image main"><img src="images/2.jpg" alt="" /></span>
 							
-							<p>Desafío: Definición de temáticas del Proyecto Final
-								</br>
-							Desafío: Definición de la Fuente de Información</p>
-							<strong>Proyecto seleccionado:</strong>
-							<p>Analizar: Cantidad de pasajeros en cada estación de Subte de la Ciudad Autonoma de Buenos Aires.
+							<p>
+								Líneas:
 							</br>
-							Industria: Transporte.
+								PK_LINEA PRIMARY KEY(id_linea)
 							</br>
-							Temática: Cantidad de pasajeros por molinete en cada estación en rangos de a 15 min discriminando el tipo de pasaje.
+								Estación:
 							</br>
-							Objetivo: Determinar si es factible la necesidad de llevar a cabo obras de expansion de las lineas de subte.
+
+								PK_ESTACION PRIMARY KEY(id_estacion) FK_LINEA FOREIGN KEY (id_linea)
+							</br>
+
+								Molinetes:
+							</br>
+
+								PK_MOLINETE PRIMARY KEY(id_molinete) PK_Molinete KEY(id_estacion)
+							</br>
+
+								Pasajeros:
+							</br>
+
+								PK_Molinete KEY(id_molinete)
+							</br>
+
 							</p>
 
-						<h3>Consultar los archivos y el código<a href="https://www.coderhouse.com/">Aquí</a>						</div>
+						<h3>Consultar los archivos y el código <a href="https://www.coderhouse.com/">Aquí</a>						</div>
 					</div>
 
 	<!-- Footer -->
